@@ -1,4 +1,4 @@
-package `in`.sportscafe.nostragamus.bottomsheetfragment
+package `in`.bottomsheetfragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
