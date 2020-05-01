@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white">
+
+    <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@android:color/white">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:orientation="vertical"
+                          android:layout_gravity="center_vertical"
+                          android:layout_weight="1">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ITEMS"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <View android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:background="@android:color/darker_gray"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:orientation="vertical"
+                          android:layout_gravity="center_vertical"
+                          android:layout_weight="1">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAVINGS"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="11sp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 30"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <View android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:background="@android:color/darker_gray"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:orientation="vertical"
+                          android:layout_gravity="center_vertical"
+                          android:layout_weight="1">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_gravity="center">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 400"
+                            android:textColor="@android:color/black"
+                            android:textSize="11sp"/>
+
+                    <ImageView android:layout_width="10dp"
+                               android:layout_height="10dp"
+                               android:src="@drawable/i_icon"
+                               android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#eeeeee"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+            android:id="@+id/expanded_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sub Total"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 420"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"
+                        android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="#eeeeee"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginLeft="12dp"
+                  android:layout_marginRight="12dp"/>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Savings"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="11sp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(-) ₹ 30"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="11sp"
+                        android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="#eeeeee"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginLeft="12dp"
+                  android:layout_marginRight="12dp"/>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GST"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(+) ₹ 10"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"
+                        android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginLeft="12dp"
+                  android:layout_marginRight="12dp"/>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 400"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"
+                        android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

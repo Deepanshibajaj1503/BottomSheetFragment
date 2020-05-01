@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@android:color/white">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Cart"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!-- Bottom sheet layout -->
+    <RelativeLayout
+            android:id="@+id/bottom_sheet_parent"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            app:behavior_hideable="false"
+            app:behavior_peekHeight="60dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <include layout="@layout/fragment_bottom_sheet"
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
