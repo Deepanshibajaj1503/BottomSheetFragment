@@ -55,4 +55,4 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
-![](bottomsheet_video.gif)
+<img src="bottomsheet_video.gif" width="400"/>
